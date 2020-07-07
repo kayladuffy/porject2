@@ -1,14 +1,28 @@
 /** Media Queries **/
+/* 768px / 16px = 48em */
 /** XS Screens **/
+/** Small Screens and up **/
+/** Medium Screens and up **/
 /** Page Design **/
-.navigation {
-  display: inline-block;
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+body {
+  background-color: black;
+  font-family: "Indie Flower", Serif, sans-serif, arial;
+  font-size: 2em;
+  text-align: center;
 }
 
-body {
-  background: black;
-  text-align: center;
-  font-family: "Indie Flower", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
+.logo {
+  color: white;
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+}
+
+div {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

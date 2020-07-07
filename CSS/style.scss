@@ -1,4 +1,6 @@
 /** Media Queries **/
+$mq-1: 48em !default; /* 768px / 16px = 48em */
+$mq-2: 62em !default;
 
 /** XS Screens **/
 @mixin extra-small-only {
@@ -7,15 +9,50 @@
     }
 }
 
+/** Small Screens and up **/
+@mixin small-and-above {
+    @media only screen and (min-width : $mq-1) {
+        @content;
+    }
+}
+
+/** Medium Screens and up **/
+@mixin medium-and-above {
+    @media only screen and (min-width : $mq-2) {
+        @content;
+    }
+}
+
 /** Page Design **/
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+$color_1: white;
+
+$font_family_1: "Indie Flower", Serif, sans-serif, arial;
 
 $background_color_1: black;
 
-.navigation {
-    display: inline-block
-}
+$font_size_1: 2em;
+
+$font_size_2: 2.5em;
 
 body {
-    background: black;
+	background-color: $background_color_1;
+    font-family: $font_family_1;
+    font-size: $font_size_1;
     text-align: center;
+}
+
+.logo {
+    color: $color_1;
+    font-size: $font_size_2;
+    text-decoration: none;
+}
+p {
+	color: $color_1;
+}
+
+div {
+    text-decoration: none;
 }
