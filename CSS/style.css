@@ -1,8 +1,12 @@
-body {
-    background: black;
-    color: white;
+/** Media Queries **/
+/** XS Screens **/
+/** Page Design **/
+.navigation {
+  display: inline-block;
 }
 
-.logo {
-    font-size: 2em;
+body {
+  background: black;
+  text-align: center;
 }
+/*# sourceMappingURL=style.css.map */
