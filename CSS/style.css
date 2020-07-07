@@ -1,3 +1,7 @@
 body {
     background: black;
 }
+
+.logo {
+    font-size: 2em;
+}
