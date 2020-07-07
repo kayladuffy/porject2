@@ -1,4 +1,26 @@
-//javascript, jQuery
+const gifForm = $("#gif-form");
 
-var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5");
-xhr.done(function(data) { console.log("success got data", data); });
+gifForm.submit(e => {
+    e.preventDefault();
+    const searchTerm = $(".search").val();
+    const url = `https://api.giphy.com/v1/gifs/search?&q=${searchTerm}&limit=5&api_key=a4ydDc4WpesyfvXPTkEoSgyOWStNjTlm`;
+    $.get(url)
+      .done(resp => {
+        showGiphs(resp.data.slice(0, 40));
+      })
+      .fail(console.log);
+  });
+
+  function showGiphs(dataArray) {
+    const results = document.querySelector(".results");
+    let output = "";
+    output = dataArray
+      .map(
+        imgData =>
+          `<a href="${imgData.images.original.url}" alt="${
+            imgData.title
+          }" target="_blank"><img src="${imgData.images.original.url}"></a>`
+      )
+      .join("");
+    $(".results").html(output);
+  }
