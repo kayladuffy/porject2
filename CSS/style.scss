@@ -1,1 +1,8 @@
 $background_color_1: black;
+
+/* XS Screens */
+@mixin extra-small-only {
+    @media only screen and (max-width : $mq-1 - 0.0625) {
+        @content;
+    }
+}
