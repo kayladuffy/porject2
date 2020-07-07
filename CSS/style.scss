@@ -1,8 +1,21 @@
-$background_color_1: black;
+/** Media Queries **/
 
-/* XS Screens */
+/** XS Screens **/
 @mixin extra-small-only {
     @media only screen and (max-width : $mq-1 - 0.0625) {
         @content;
     }
+}
+
+/** Page Design **/
+
+$background_color_1: black;
+
+.navigation {
+    display: inline-block
+}
+
+body {
+    background: black;
+    text-align: center;
 }
