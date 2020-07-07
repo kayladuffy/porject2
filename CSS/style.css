@@ -25,4 +25,10 @@ p {
 div {
   text-decoration: none;
 }
+
+#giphy {
+    align-items: center;
+    padding-top: 5%;
+    width: 50%;
+}
 /*# sourceMappingURL=style.css.map */
