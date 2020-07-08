@@ -1,7 +1,6 @@
 /** Media Queries **/
 /* 768px / 16px = 48em */
-/** XS Screens **/
-/** Small Screens and up **/
+/** Small Screens and up**/
 /** Medium Screens and up **/
 /** Page Design **/
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
@@ -21,6 +20,26 @@ p {
   font-size: 2.5em;
   text-decoration: none;
   float: left;
+}
+
+.form .search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 350px) {
+  .form input {
+    width: 300px;
+  }
 }
 
 #search {
