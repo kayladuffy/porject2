@@ -37,22 +37,53 @@ $font_size_1: 2em;
 
 $font_size_2: 2.5em;
 
+$font_size_3: 1.5em;
+
 body {
 	background-color: $background_color_1;
     font-family: $font_family_1;
     font-size: $font_size_1;
     text-align: center;
+    
+}
+
+p {
+    color: $color_1;
 }
 
 .logo {
     color: $color_1;
     font-size: $font_size_2;
     text-decoration: none;
-}
-p {
-	color: $color_1;
+    float: left;
 }
 
-div {
+#search {
+    float: right;
+}
+
+#navBar {
+    padding-top: 15%;
+    padding-bottom: 5%;
     text-decoration: none;
+    float: center;
+    font-size: $font_size_3;
+}
+
+button[type="Submit"] {
+    font-family: $font_family_1;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 5%;
+}
+
+ #textarea {
+    font-family: $font_family_1;
+    font-size: 1em;
+    text-align: left;
+    text-indent: .5em;
+}
+
+img {
+    padding: auto;
 }
