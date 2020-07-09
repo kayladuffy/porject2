@@ -7,6 +7,19 @@ body {
   text-align: center;
 }
 
+.main-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 p {
   color: white;
 }
@@ -15,32 +28,13 @@ p {
   color: white;
   font-size: 2.5em;
   text-decoration: none;
-  float: left;
-}
-
-.form .search-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#search {
-  float: right;
 }
 
 #navBar {
-  padding-top: 15%;
+  padding-top: 5%;
   padding-bottom: 5%;
-  text-decoration: none;
-  float: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   font-size: 1.5em;
 }
 
@@ -49,6 +43,10 @@ button[type="Submit"] {
   font-size: 1em;
   text-align: center;
   margin-top: 5%;
+}
+
+.btn {
+  text-decoration: none;
 }
 
 #textarea {
@@ -62,19 +60,13 @@ img {
   padding: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .logo {
     font-size: 1.5em;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    text-align: center;
+  }
+  #search {
+    margin-bottom: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
