@@ -25,7 +25,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 p {
@@ -39,7 +39,6 @@ p {
 }
 
 #navBar {
-    padding-top: 5%;
     padding-bottom: 5%;
     justify-self: center;
     font-size: $font_size_3;
@@ -54,6 +53,7 @@ button[type="Submit"] {
 
 .btn {
     text-decoration: none;
+    padding-bottom: 5%;
 }
 
  #textarea {
@@ -61,10 +61,6 @@ button[type="Submit"] {
     font-size: 1em;
     text-align: left;
     text-indent: .5em;
-}
-
-img {
-    padding: auto;
 }
 
 @media screen and (max-width: 320px) {
