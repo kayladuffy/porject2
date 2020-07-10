@@ -28,6 +28,11 @@ body {
     flex-wrap: wrap;
 }
 
+div > h1 {
+    margin-bottom: 0%;
+    margin-left: 5%;
+}
+
 p {
     color: $color_1;
 }
@@ -53,7 +58,6 @@ button[type="Submit"] {
 
 .btn {
     text-decoration: none;
-    padding-bottom: 5%;
 }
 
  #textarea {

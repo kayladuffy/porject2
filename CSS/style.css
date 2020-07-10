@@ -20,6 +20,11 @@ body {
       flex-wrap: wrap;
 }
 
+div > h1 {
+  margin-bottom: 0%;
+  margin-left: 5%;
+}
+
 p {
   color: white;
 }
@@ -31,7 +36,6 @@ p {
 }
 
 #navBar {
-  padding-top: 5%;
   padding-bottom: 5%;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -54,10 +58,6 @@ button[type="Submit"] {
   font-size: 1em;
   text-align: left;
   text-indent: .5em;
-}
-
-img {
-  padding: auto;
 }
 
 @media screen and (max-width: 320px) {
