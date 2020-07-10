@@ -1,10 +1,10 @@
 /** Page Design **/
 
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 $color_1: white;
 
-$font_family_1: "Indie Flower", Serif, sans-serif, arial;
+$font_family_1: 'Roboto Mono', monospace, Serif, sans-serif, arial;
 
 $background_color_1: black;
 
@@ -41,9 +41,11 @@ p {
     color: $color_1;
     font-size: $font_size_2;
     text-decoration: none;
+    margin-top: 1%;
 }
 
 #navBar {
+    padding-top: 5%;
     padding-bottom: 5%;
     justify-self: center;
     font-size: $font_size_3;
@@ -74,7 +76,13 @@ button[type="Submit"] {
     }
     #search {
         margin-bottom: 10%;
-
-    }    
+    }  
+    #textarea {
+        width: 75%;
+        font-size: 25px;
+    }  
+    .btn {
+        font-size: 45px;
+    }
 }
 

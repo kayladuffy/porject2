@@ -1,8 +1,8 @@
 /** Page Design **/
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 body {
   background-color: black;
-  font-family: "Indie Flower", Serif, sans-serif, arial;
+  font-family: "Roboto Mono", monospace, Serif, sans-serif, arial;
   font-size: 2em;
   text-align: center;
 }
@@ -33,9 +33,11 @@ p {
   color: white;
   font-size: 2.5em;
   text-decoration: none;
+  margin-top: 1%;
 }
 
 #navBar {
+  padding-top: 5%;
   padding-bottom: 5%;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -43,7 +45,7 @@ p {
 }
 
 button[type="Submit"] {
-  font-family: "Indie Flower", Serif, sans-serif, arial;
+  font-family: "Roboto Mono", monospace, Serif, sans-serif, arial;
   font-size: 1em;
   text-align: center;
   margin-top: 5%;
@@ -54,7 +56,7 @@ button[type="Submit"] {
 }
 
 #textarea {
-  font-family: "Indie Flower", Serif, sans-serif, arial;
+  font-family: "Roboto Mono", monospace, Serif, sans-serif, arial;
   font-size: 1em;
   text-align: left;
   text-indent: .5em;
@@ -67,6 +69,13 @@ button[type="Submit"] {
   }
   #search {
     margin-bottom: 10%;
+  }
+  #textarea {
+    width: 75%;
+    font-size: 25px;
+  }
+  .btn {
+    font-size: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
