@@ -51,6 +51,11 @@ p {
     font-size: $font_size_3;
 }
 
+
+#navBar a:hover {
+    color: white;
+  }
+
 button[type="Submit"] {
     font-family: $font_family_1;
     font-size: 1em;

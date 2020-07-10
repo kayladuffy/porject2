@@ -44,6 +44,10 @@ p {
   font-size: 1.5em;
 }
 
+#navBar a:hover {
+  color: white;
+}
+
 button[type="Submit"] {
   font-family: "Roboto Mono", monospace, Serif, sans-serif, arial;
   font-size: 1em;
