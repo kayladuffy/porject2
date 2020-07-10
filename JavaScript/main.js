@@ -23,4 +23,31 @@ gifForm.submit(e => {
       )
       .join("");
     $(".results").html(output);
+
+    fetch(path)
+    .then(function(res) {
+    return res.json()
+})
+
+.then(function(json) {
+    let resultsHTML = ''
+        json.data.forEach(function(obj) {
+            const url = obj.images.fixed_width.url
+            const width = obj.images.fixed_width.width
+            const height = obj.images.fixed_width.height
+            const alt = obj.title;
+            resultsHTML += `
+            <div class="box">
+                <div class="content">
+                    <figure>
+                        <img src="${url}" width="${width}" height="${height}" alt="${alt}">
+                        <figcaption>${alt}</figcaption>
+                    </figure>
+                </div>
+            </div>
+            `
+        })
+
+        resultsEl.innerHTML = resultsHTML
+    })
   }
